@@ -1,9 +1,9 @@
-import React, { useRef, useState } from "react"
-import { Form, Button, Card, Alert } from "react-bootstrap"
+import React, { useRef, } from "react"
+import { Form, Button, Card} from "react-bootstrap"
 // import { useAuth } from "../contexts/AuthContext"
 // import { Link, useHistory } from "react-router-dom"
 
-export default function Sign_up() {
+export default function SignUp() {
     const emailRef = useRef()
     const passwordRef = useRef()
     const passwordConfirmRef = useRef()
@@ -27,14 +27,15 @@ export default function Sign_up() {
               <Form.Label>Password Confirmation</Form.Label>
               <Form.Control type="password" ref={passwordConfirmRef} required />
             </Form.Group>
-            {/* <Button disabled={loading} className="w-100" type="submit"> */}
-              {/* Sign Up */}
-            {/* </Button> */}
+            <br></br>
+            <Button className="w-100" type="submit">
+              Sign Up
+            </Button>
           </Form>
         </Card.Body>
       </Card>
       <div className="w-100 text-center mt-2">
-        Already have an account? <Link to="/login">Log In</Link>
+        Already have an account? LOG - IN
       </div>
     </>
   )
